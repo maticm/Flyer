@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="si.flyerman.users.Users" table="USERS">
+        <meta attribute="class-description">
+            This class carries out the basic advert functioning.
+        </meta>
+        <id name="id" type="int" column="id">
+            <generator class="native" />
+        </id>
+        <property name="userName" column="userName" type="string" />
+        <property name="password" column="password" type="string" />
+        <property name="firstName" column="firstName" type="string" />
+        <property name="lastName" column="lastName" type="string" />
+        <property name="type" column="type" type="int" />
+    </class>
+</hibernate-mapping>

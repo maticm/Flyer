@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="si.flyerman.config.Configuration" table="CONFIGURATION">
+        <meta attribute="class-description">
+            Configuration settings.
+        </meta>
+        <id name="constant" type="string" column="const">
+            <generator class="native" />
+        </id>
+<!--        <property name="const" column="const" type="string" />-->
+        <property name="val" column="val" type="string" />
+    </class>
+</hibernate-mapping>
